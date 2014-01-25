@@ -1,18 +1,10 @@
-//
-//  GameViewController.m
-//  TableTennisHack
-//
-//  Created by Hicham Abou Jaoude on 1/24/2014.
-//  Copyright (c) 2014 Hicham Abou Jaoude. All rights reserved.
-//
-
 #import "GameViewController.h"
 #import "SocketIOPacket.h"
 #import <AudioToolbox/AudioServices.h>
 #import <CoreMotion/CoreMotion.h>
 #import <AVFoundation/AVAudioPlayer.h>
+
 @interface GameViewController ()
-  
 @end
 
 @implementation GameViewController
@@ -31,8 +23,10 @@
     [super viewDidLoad];
     socketIO = [[SocketIO alloc] initWithDelegate:self];
     [socketIO connectToHost:@"telepong.herokuapp.com" onPort:0];
-    [socketIO sendEvent:@"joinConnectionMobile" withData:self.iDNumber];
     NSString *idnumbz = self.iDNumber;
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+    [dict setValue:idnumbz forKey:@"id"];
+    [socketIO sendEvent:@"joinConnectionMobile" withData:dict];
     NSLog(@"Id:%@",self.iDNumber);
 }
 -(BOOL)shouldAutorotate
@@ -73,6 +67,12 @@
         {
             myPlay = 2;
         }
+        else if (player == -1)
+        {
+            [socket disconnectForced];
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
+        }
     }
     if ([packet.name isEqualToString:@"onHit" ]) {
         int player = [packet.args[0] integerValue];
@@ -84,7 +84,7 @@
     
 }
 int didHH = 0;
-int myPlay = -1;
+int myPlay = -5;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     

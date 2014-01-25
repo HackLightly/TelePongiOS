@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5127351893924B009EB362 /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */; };
 		1F74B8F318933B1B00A36FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F218933B1B00A36FC0 /* Foundation.framework */; };
 		1F74B8F518933B1B00A36FC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F418933B1B00A36FC0 /* CoreGraphics.framework */; };
 		1F74B8F718933B1B00A36FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F618933B1B00A36FC0 /* UIKit.framework */; };
@@ -63,7 +64,6 @@
 		1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A8189373FA009CA2FA /* iconAppioS.png */; };
 		1FB893AB189374AC009CA2FA /* launchSc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893AA189374AC009CA2FA /* launchSc.png */; };
 		1FB893AD18938D48009CA2FA /* swoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893AC18938D48009CA2FA /* swoosh.mp3 */; };
-		1FB893B31893906F009CA2FA /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
 		1F74B8EF18933B1B00A36FC0 /* TableTennisHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTennisHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F74B8F218933B1B00A36FC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F74B8F418933B1B00A36FC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,7 +172,6 @@
 		1FB893A8189373FA009CA2FA /* iconAppioS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAppioS.png; sourceTree = "<group>"; };
 		1FB893AA189374AC009CA2FA /* launchSc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchSc.png; sourceTree = "<group>"; };
 		1FB893AC18938D48009CA2FA /* swoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh.mp3; sourceTree = "<group>"; };
-		1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +226,7 @@
 				1FB893AC18938D48009CA2FA /* swoosh.mp3 */,
 				1FB893AA189374AC009CA2FA /* launchSc.png */,
 				1FB893A8189373FA009CA2FA /* iconAppioS.png */,
-				1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */,
+				1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */,
 				1FB8939D1893601E009CA2FA /* paddle.png */,
 				1FB893A6189373E9009CA2FA /* ping_pong copy.png */,
 				1F74B94418933CF300A36FC0 /* active_600@2x.png */,
@@ -521,7 +521,7 @@
 				1FB893AB189374AC009CA2FA /* launchSc.png in Resources */,
 				1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */,
 				1F74B90B18933B1B00A36FC0 /* Images.xcassets in Resources */,
-				1FB893B31893906F009CA2FA /* table-tennis-racquet-hi.png in Resources */,
+				1F5127351893924B009EB362 /* table-tennis-racquet-hi.png in Resources */,
 				1FB8938518934C3F009CA2FA /* SBJson-Info.plist in Resources */,
 				1F74B8FD18933B1B00A36FC0 /* InfoPlist.strings in Resources */,
 				1FB8939E1893601E009CA2FA /* paddle.png in Resources */,
