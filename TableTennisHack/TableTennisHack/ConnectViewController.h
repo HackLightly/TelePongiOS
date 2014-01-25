@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ConnectViewController : UIViewController
-
+#import "SocketIO.h"
+@interface ConnectViewController : UIViewController <SocketIODelegate>
+{
+SocketIO *socketIO;
+    NSTimer *timerCheck;
+    IBOutlet UILabel *tableTenLabel;
+    IBOutlet UILabel *scanCode;
+    IBOutlet UIButton *scanButt;
+    IBOutlet UIButton *aboutButt;
+    IBOutlet UILabel *designBy;
+}
 @end

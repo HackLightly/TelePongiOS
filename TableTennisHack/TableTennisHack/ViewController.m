@@ -27,19 +27,22 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)connectFB
+-(IBAction)back:(id)sender
 {
-    NSArray *permissions = @[ @"user_about_me", @"user_relationships", @"read_friendlists", @"user_location"];
-    [PFFacebookUtils logInWithPermissions:permissions block:^(PFUser *user, NSError *error) {
-        if (!user) {
-            NSLog(@"Uh oh. The user cancelled the Facebook login.");
-        } else if (user.isNew) {
-            NSLog(@"User signed up and logged in through Facebook!");
-        } else {
-            NSLog(@"User logged in through Facebook!");
-        }
-    }];
-
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(BOOL)shouldAutorotate
+{
+    
+    return NO;
+    
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
+}
 @end
