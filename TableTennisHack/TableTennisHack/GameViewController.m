@@ -28,9 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //socketIO = [[SocketIO alloc] initWithDelegate:self];
-    //[socketIO connectToHost:@"vast-woodland-7556.herokuapp.com" onPort:0];
-    //[socketIO sendEvent:@"request" withData:self.iDNumber];
+    socketIO = [[SocketIO alloc] initWithDelegate:self];
+    [socketIO connectToHost:@"vast-woodland-7556.herokuapp.com" onPort:0];
+    [socketIO sendEvent:@"joinConnectionMobile" withData:self.iDNumber];
     NSLog(@"Id:%@",self.iDNumber);
 }
 -(BOOL)shouldAutorotate
@@ -52,7 +52,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
+- (void)socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
     SocketIOCallback cb = ^(id argsData) {
         NSDictionary *response = argsData;
@@ -61,23 +61,27 @@
         [socketIO disconnectForced];
     };
     
-    if ([packet.name isEqualToString:@"joingame" ])
+    if ([packet.name isEqualToString:@"gameData" ])
     {
         
     }
-    if ([packet.name isEqualToString:@"hitnow" ]) {
-        
+    if ([packet.name isEqualToString:@"onHit" ]) {
+        int player = [packet.args[0] integerValue];
+        if (player == myPlay)
+        {
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+        }
     }
     
 }
 int didHH = 0;
-
+int myPlay = -1;
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     
-        NSLog(@"You Hit it");
-         AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-        //[socketIO sendEvent:@"swung" withData:@"yes"];
+    NSLog(@"You Hit it");
+    
+    [socketIO sendEvent:@"swing" withData:self.iDNumber];
     
     if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
         [super motionEnded:motion withEvent:event];
