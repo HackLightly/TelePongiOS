@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZP-KK-LsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="-53"/>
+            <point key="canvasLocation" x="1235" y="-53"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ULM-2p-dW5">
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1J-PO-doc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="21"/>
+            <point key="canvasLocation" x="898" y="-53"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="CV5-eG-Lqd">
@@ -173,6 +173,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.33333333333333331" green="0.74117647058823533" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="aboutButt" destination="yF9-Th-2DG" id="zOd-9V-XrC"/>
                         <outlet property="designBy" destination="Q0l-Tr-hhP" id="gwD-Da-eyq"/>

@@ -80,8 +80,12 @@
         } else if (player == 4)
         {
             [hudupload hide:YES];
+            if (myPlay ==1 )
+            {
+                
+            }else{
             myPlay = 2;
-            
+            }
         }
         else if (player == -1)
         {
@@ -91,18 +95,25 @@
         }
         else if (player == 11)
         {
-             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-             AudioServicesPlaySystemSound(1104);
-            
+            [self dismissViewControllerAnimated:YES completion:nil];
             
         }
         else if (player == 10)
         {
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
+            
+        } else if (player ==8)
+        {
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
             AudioServicesPlaySystemSound(1104);
             
-            
+        } else if (player ==9)
+        {
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+            AudioServicesPlaySystemSound(1104);
         }
+       
     }
     if ([packet.name isEqualToString:@"onHit" ]) {
         int player = [packet.args[0] integerValue];
