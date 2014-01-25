@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F5127351893924B009EB362 /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */; };
+		1F5127381893A942009EB362 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5127371893A942009EB362 /* MBProgressHUD.m */; };
+		1F51273B1893AA76009EB362 /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F51273A1893AA76009EB362 /* table-tennis-racquet-hi.png */; };
 		1F74B8F318933B1B00A36FC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F218933B1B00A36FC0 /* Foundation.framework */; };
 		1F74B8F518933B1B00A36FC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F418933B1B00A36FC0 /* CoreGraphics.framework */; };
 		1F74B8F718933B1B00A36FC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B8F618933B1B00A36FC0 /* UIKit.framework */; };
@@ -77,7 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
+		1F5127361893A942009EB362 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1F5127371893A942009EB362 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1F51273A1893AA76009EB362 /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
 		1F74B8EF18933B1B00A36FC0 /* TableTennisHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTennisHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F74B8F218933B1B00A36FC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F74B8F418933B1B00A36FC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -179,9 +182,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FB8932B18934712009CA2FA /* AVFoundation.framework in Frameworks */,
 				1FB8932F18934735009CA2FA /* libiconv.dylib in Frameworks */,
 				1FB8932D1893472B009CA2FA /* CoreMedia.framework in Frameworks */,
+				1FB8932B18934712009CA2FA /* AVFoundation.framework in Frameworks */,
 				1FB89371189349C9009CA2FA /* libzbar.a in Frameworks */,
 				1FB893291893470C009CA2FA /* CoreVideo.framework in Frameworks */,
 				1F74B93E18933C7000A36FC0 /* AudioToolbox.framework in Frameworks */,
@@ -215,6 +218,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5127391893A945009EB362 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1F5127361893A942009EB362 /* MBProgressHUD.h */,
+				1F5127371893A942009EB362 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		1F74B8E618933B1B00A36FC0 = {
 			isa = PBXGroup;
 			children = (
@@ -224,9 +236,10 @@
 				1FB8938018934C1C009CA2FA /* SocketRocket */,
 				1FB89353189349C9009CA2FA /* ZBarSDK */,
 				1FB893AC18938D48009CA2FA /* swoosh.mp3 */,
+				1F5127391893A945009EB362 /* MBProgressHUD */,
 				1FB893AA189374AC009CA2FA /* launchSc.png */,
+				1F51273A1893AA76009EB362 /* table-tennis-racquet-hi.png */,
 				1FB893A8189373FA009CA2FA /* iconAppioS.png */,
-				1F5127341893924B009EB362 /* table-tennis-racquet-hi.png */,
 				1FB8939D1893601E009CA2FA /* paddle.png */,
 				1FB893A6189373E9009CA2FA /* ping_pong copy.png */,
 				1F74B94418933CF300A36FC0 /* active_600@2x.png */,
@@ -521,7 +534,7 @@
 				1FB893AB189374AC009CA2FA /* launchSc.png in Resources */,
 				1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */,
 				1F74B90B18933B1B00A36FC0 /* Images.xcassets in Resources */,
-				1F5127351893924B009EB362 /* table-tennis-racquet-hi.png in Resources */,
+				1F51273B1893AA76009EB362 /* table-tennis-racquet-hi.png in Resources */,
 				1FB8938518934C3F009CA2FA /* SBJson-Info.plist in Resources */,
 				1F74B8FD18933B1B00A36FC0 /* InfoPlist.strings in Resources */,
 				1FB8939E1893601E009CA2FA /* paddle.png in Resources */,
@@ -562,6 +575,7 @@
 				1FB8939418934C62009CA2FA /* SocketIOJSONSerialization.m in Sources */,
 				1F74B94118933CB400A36FC0 /* ConnectViewController.m in Sources */,
 				1FB8939318934C62009CA2FA /* SocketIOPacket.m in Sources */,
+				1F5127381893A942009EB362 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

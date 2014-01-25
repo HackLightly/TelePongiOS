@@ -12,7 +12,9 @@
 @interface GameViewController : UIViewController <SocketIODelegate>
 {
     SocketIO *socketIO;
+    NSURL *url;
     AVAudioPlayer *audioPlayer;
+    
 }
 @property (strong, nonatomic) NSString *iDNumber;
 @end

@@ -242,7 +242,7 @@ NSString* const SocketIOException = @"SocketIOException";
         packet.ack = @"data";
     }
     
-    NSLog(@"!!!!!! %@ :: %@ :: %@",eventName, packet.data, packet.args[0]);
+    NSLog(@"%@: %@: %@",eventName, packet.data, packet.args[0]);
     
     [self send:packet];
 }

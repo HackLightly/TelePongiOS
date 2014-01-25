@@ -117,6 +117,7 @@ int perf = 0;
 }
 -(void)viewDidAppear:(BOOL)animated
 {
+    
     UIFont *customFont = [UIFont fontWithName:@"Nunito-Light" size:49.0f];
     // tableTenLabel.font = customFont;
     [tableTenLabel setFont:customFont];

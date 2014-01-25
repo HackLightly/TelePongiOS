@@ -13,19 +13,18 @@
                         <viewControllerLayoutGuide type="bottom" id="CVp-og-5qC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gpL-NY-Wb7">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="table-tennis-racquet-hi.png" translatesAutoresizingMaskIntoConstraints="NO" id="aY9-kK-stE">
-                                <rect key="frame" x="32" y="-5" width="504" height="331"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.33333333329999998" green="0.74117647060000003" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZP-KK-LsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1J-PO-doc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="356"/>
+            <point key="canvasLocation" x="1299" y="21"/>
         </scene>
         <!--Connect View Controller-->
         <scene sceneID="CV5-eG-Lqd">
@@ -190,7 +189,7 @@
     </scenes>
     <resources>
         <image name="ping_pong copy.png" width="512" height="512"/>
-        <image name="table-tennis-racquet-hi.png" width="600" height="410"/>
+        <image name="table-tennis-racquet-hi.png" width="410" height="600"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
