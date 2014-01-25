@@ -60,6 +60,9 @@
 		1FB893A3189362E3009CA2FA /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8939F18936181009CA2FA /* Nunito-Bold.ttf */; };
 		1FB893A4189362E6009CA2FA /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A118936181009CA2FA /* Nunito-Regular.ttf */; };
 		1FB893A5189362E8009CA2FA /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A018936181009CA2FA /* Nunito-Light.ttf */; };
+		1FB893A7189373E9009CA2FA /* ping_pong copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A6189373E9009CA2FA /* ping_pong copy.png */; };
+		1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A8189373FA009CA2FA /* iconAppioS.png */; };
+		1FB893AB189374AC009CA2FA /* launchSc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893AA189374AC009CA2FA /* launchSc.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +167,9 @@
 		1FB8939F18936181009CA2FA /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		1FB893A018936181009CA2FA /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		1FB893A118936181009CA2FA /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		1FB893A6189373E9009CA2FA /* ping_pong copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_pong copy.png"; sourceTree = "<group>"; };
+		1FB893A8189373FA009CA2FA /* iconAppioS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAppioS.png; sourceTree = "<group>"; };
+		1FB893AA189374AC009CA2FA /* launchSc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchSc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +222,10 @@
 				1FB8938018934C1C009CA2FA /* SocketRocket */,
 				1FB89353189349C9009CA2FA /* ZBarSDK */,
 				1F74B94218933CDE00A36FC0 /* table-tennis-racquet-hi.png */,
+				1FB893AA189374AC009CA2FA /* launchSc.png */,
+				1FB893A8189373FA009CA2FA /* iconAppioS.png */,
 				1FB8939D1893601E009CA2FA /* paddle.png */,
+				1FB893A6189373E9009CA2FA /* ping_pong copy.png */,
 				1F74B94418933CF300A36FC0 /* active_600@2x.png */,
 				1FB8932618934092009CA2FA /* Parse.framework */,
 				1F74B92918933BB800A36FC0 /* FacebookSDK.framework */,
@@ -501,10 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F74B94518933CF300A36FC0 /* active_600@2x.png in Resources */,
+				1FB893A7189373E9009CA2FA /* ping_pong copy.png in Resources */,
 				1FB89372189349C9009CA2FA /* zbar-back.png in Resources */,
 				1FB893A3189362E3009CA2FA /* Nunito-Bold.ttf in Resources */,
 				1FB89375189349C9009CA2FA /* zbar-samples.png in Resources */,
 				1FB893A4189362E6009CA2FA /* Nunito-Regular.ttf in Resources */,
+				1FB893AB189374AC009CA2FA /* launchSc.png in Resources */,
+				1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */,
 				1F74B94318933CDE00A36FC0 /* table-tennis-racquet-hi.png in Resources */,
 				1F74B90B18933B1B00A36FC0 /* Images.xcassets in Resources */,
 				1FB8938518934C3F009CA2FA /* SBJson-Info.plist in Resources */,
@@ -670,8 +682,6 @@
 		1F74B92218933B1C00A36FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: hicham abou jaoude (756578F2J2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -694,8 +704,6 @@
 		1F74B92318933B1C00A36FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: hicham abou jaoude (756578F2J2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

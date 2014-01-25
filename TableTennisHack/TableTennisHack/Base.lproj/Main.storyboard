@@ -50,8 +50,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="1p5-qS-uSE">
-                                <rect key="frame" x="86" y="87" width="149" height="157"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ping_pong copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="1p5-qS-uSE">
+                                <rect key="frame" x="96" y="107" width="129" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  iOS: Hicham Abou-Jaoude" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="267" translatesAutoresizingMaskIntoConstraints="NO" id="q1F-WW-wpB">
@@ -167,8 +167,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="DS2-wY-bfs">
-                                <rect key="frame" x="86" y="98" width="149" height="157"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ping_pong copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="W0q-QK-Qg7">
+                                <rect key="frame" x="96" y="117" width="129" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -189,7 +189,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="paddle.png" width="504" height="540"/>
+        <image name="ping_pong copy.png" width="512" height="512"/>
         <image name="table-tennis-racquet-hi.png" width="600" height="410"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
