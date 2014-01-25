@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SocketIO.h"
+#import <AVFoundation/AVAudioPlayer.h>
 @interface GameViewController : UIViewController <SocketIODelegate>
 {
     SocketIO *socketIO;
+    AVAudioPlayer *audioPlayer;
 }
 @property (strong, nonatomic) NSString *iDNumber;
 @end

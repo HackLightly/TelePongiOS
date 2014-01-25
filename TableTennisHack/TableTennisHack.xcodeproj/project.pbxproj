@@ -33,7 +33,6 @@
 		1F74B93C18933C6B00A36FC0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B93B18933C6B00A36FC0 /* CFNetwork.framework */; };
 		1F74B93E18933C7000A36FC0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F74B93D18933C7000A36FC0 /* AudioToolbox.framework */; };
 		1F74B94118933CB400A36FC0 /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F74B94018933CB400A36FC0 /* ConnectViewController.m */; };
-		1F74B94318933CDE00A36FC0 /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F74B94218933CDE00A36FC0 /* table-tennis-racquet-hi.png */; };
 		1F74B94518933CF300A36FC0 /* active_600@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F74B94418933CF300A36FC0 /* active_600@2x.png */; };
 		1FB8932718934092009CA2FA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB8932618934092009CA2FA /* Parse.framework */; };
 		1FB893291893470C009CA2FA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB893281893470C009CA2FA /* CoreVideo.framework */; };
@@ -63,6 +62,8 @@
 		1FB893A7189373E9009CA2FA /* ping_pong copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A6189373E9009CA2FA /* ping_pong copy.png */; };
 		1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893A8189373FA009CA2FA /* iconAppioS.png */; };
 		1FB893AB189374AC009CA2FA /* launchSc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893AA189374AC009CA2FA /* launchSc.png */; };
+		1FB893AD18938D48009CA2FA /* swoosh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893AC18938D48009CA2FA /* swoosh.mp3 */; };
+		1FB893B31893906F009CA2FA /* table-tennis-racquet-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +109,6 @@
 		1F74B93D18933C7000A36FC0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1F74B93F18933CB400A36FC0 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		1F74B94018933CB400A36FC0 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
-		1F74B94218933CDE00A36FC0 /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
 		1F74B94418933CF300A36FC0 /* active_600@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "active_600@2x.png"; sourceTree = "<group>"; };
 		1FB8932618934092009CA2FA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		1FB893281893470C009CA2FA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -170,6 +170,8 @@
 		1FB893A6189373E9009CA2FA /* ping_pong copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_pong copy.png"; sourceTree = "<group>"; };
 		1FB893A8189373FA009CA2FA /* iconAppioS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconAppioS.png; sourceTree = "<group>"; };
 		1FB893AA189374AC009CA2FA /* launchSc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchSc.png; sourceTree = "<group>"; };
+		1FB893AC18938D48009CA2FA /* swoosh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swoosh.mp3; sourceTree = "<group>"; };
+		1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "table-tennis-racquet-hi.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +179,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB8932B18934712009CA2FA /* AVFoundation.framework in Frameworks */,
 				1FB8932F18934735009CA2FA /* libiconv.dylib in Frameworks */,
 				1FB8932D1893472B009CA2FA /* CoreMedia.framework in Frameworks */,
 				1FB89371189349C9009CA2FA /* libzbar.a in Frameworks */,
-				1FB8932B18934712009CA2FA /* AVFoundation.framework in Frameworks */,
 				1FB893291893470C009CA2FA /* CoreVideo.framework in Frameworks */,
 				1F74B93E18933C7000A36FC0 /* AudioToolbox.framework in Frameworks */,
 				1F74B8F518933B1B00A36FC0 /* CoreGraphics.framework in Frameworks */,
@@ -221,9 +223,10 @@
 				1FB8938618934C46009CA2FA /* SBJson */,
 				1FB8938018934C1C009CA2FA /* SocketRocket */,
 				1FB89353189349C9009CA2FA /* ZBarSDK */,
-				1F74B94218933CDE00A36FC0 /* table-tennis-racquet-hi.png */,
+				1FB893AC18938D48009CA2FA /* swoosh.mp3 */,
 				1FB893AA189374AC009CA2FA /* launchSc.png */,
 				1FB893A8189373FA009CA2FA /* iconAppioS.png */,
+				1FB893B21893906F009CA2FA /* table-tennis-racquet-hi.png */,
 				1FB8939D1893601E009CA2FA /* paddle.png */,
 				1FB893A6189373E9009CA2FA /* ping_pong copy.png */,
 				1F74B94418933CF300A36FC0 /* active_600@2x.png */,
@@ -517,11 +520,12 @@
 				1FB893A4189362E6009CA2FA /* Nunito-Regular.ttf in Resources */,
 				1FB893AB189374AC009CA2FA /* launchSc.png in Resources */,
 				1FB893A9189373FA009CA2FA /* iconAppioS.png in Resources */,
-				1F74B94318933CDE00A36FC0 /* table-tennis-racquet-hi.png in Resources */,
 				1F74B90B18933B1B00A36FC0 /* Images.xcassets in Resources */,
+				1FB893B31893906F009CA2FA /* table-tennis-racquet-hi.png in Resources */,
 				1FB8938518934C3F009CA2FA /* SBJson-Info.plist in Resources */,
 				1F74B8FD18933B1B00A36FC0 /* InfoPlist.strings in Resources */,
 				1FB8939E1893601E009CA2FA /* paddle.png in Resources */,
+				1FB893AD18938D48009CA2FA /* swoosh.mp3 in Resources */,
 				1FB89373189349C9009CA2FA /* zbar-help.html in Resources */,
 				1FB893A5189362E8009CA2FA /* Nunito-Light.ttf in Resources */,
 				1FB89374189349C9009CA2FA /* zbar-helpicons.png in Resources */,

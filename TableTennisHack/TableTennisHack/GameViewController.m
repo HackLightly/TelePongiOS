@@ -10,8 +10,9 @@
 #import "SocketIOPacket.h"
 #import <AudioToolbox/AudioServices.h>
 #import <CoreMotion/CoreMotion.h>
+#import <AVFoundation/AVAudioPlayer.h>
 @interface GameViewController ()
-
+  
 @end
 
 @implementation GameViewController
@@ -29,8 +30,9 @@
 {
     [super viewDidLoad];
     socketIO = [[SocketIO alloc] initWithDelegate:self];
-    [socketIO connectToHost:@"vast-woodland-7556.herokuapp.com" onPort:0];
+    [socketIO connectToHost:@"telepong.herokuapp.com" onPort:0];
     [socketIO sendEvent:@"joinConnectionMobile" withData:self.iDNumber];
+    NSString *idnumbz = self.iDNumber;
     NSLog(@"Id:%@",self.iDNumber);
 }
 -(BOOL)shouldAutorotate
@@ -61,9 +63,16 @@
         [socketIO disconnectForced];
     };
     
-    if ([packet.name isEqualToString:@"gameData" ])
+    if ([packet.name isEqualToString:@"statusChange" ])
     {
-        
+        int player = [packet.args[0] integerValue];
+        if (player == 2)
+        {
+            myPlay = 1;
+        } else if (player == 4)
+        {
+            myPlay = 2;
+        }
     }
     if ([packet.name isEqualToString:@"onHit" ]) {
         int player = [packet.args[0] integerValue];
@@ -80,7 +89,12 @@ int myPlay = -1;
 {
     
     NSLog(@"You Hit it");
-    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"swoosh"
+                                         ofType:@"mp3"]];
+    NSError *error;
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    [audioPlayer play];
     [socketIO sendEvent:@"swing" withData:self.iDNumber];
     
     if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
