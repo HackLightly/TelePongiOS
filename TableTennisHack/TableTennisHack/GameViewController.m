@@ -57,9 +57,12 @@
         [socketIO disconnectForced];
     };
     
+    
     if ([packet.name isEqualToString:@"statusChange" ])
     {
-        int player = [packet.args[0] integerValue];
+        NSString *str = packet.args[0] ;
+        NSLog(@"Stat:%@",str);
+        int player = [str integerValue];
         if (player == 2)
         {
             myPlay = 1;
@@ -95,7 +98,10 @@ int myPlay = -5;
     NSError *error;
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
     [audioPlayer play];
-    [socketIO sendEvent:@"swing" withData:self.iDNumber];
+    NSString *idnumbz = self.iDNumber;
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc]init];
+    [dict setValue:idnumbz forKey:@"id"];
+    [socketIO sendEvent:@"swing" withData:dict];
     
     if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )
         [super motionEnded:motion withEvent:event];
