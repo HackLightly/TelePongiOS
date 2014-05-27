@@ -4,7 +4,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import <AVFoundation/AVAudioPlayer.h>
 #import "MBProgressHUD.h"
-
+#import "ViewController.h"
 @interface GameViewController ()
 {
      MBProgressHUD *hudupload;
@@ -22,7 +22,13 @@
     }
     return self;
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"toRes"]) {
+        [[segue destinationViewController] setP1S:p1];
+        [[segue destinationViewController] setP2S:p2];
+        [[segue destinationViewController] setMeS:myPlay];
+    }
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -58,7 +64,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+int p1 = 0, p2 = 0;
 - (void)socketIO:(SocketIO *)socket didReceiveEvent:(SocketIOPacket *)packet
 {
     SocketIOCallback cb = ^(id argsData) {
@@ -67,8 +73,7 @@
         
         [socketIO disconnectForced];
     };
-    
-    
+   
     if ([packet.name isEqualToString:@"statusChange" ])
     {
         NSString *str = packet.args[0] ;
@@ -95,36 +100,42 @@
         }
         else if (player == 11)
         {
-            [self dismissViewControllerAnimated:YES completion:nil];
+            
+            [self performSegueWithIdentifier:@"toRes" sender:self];
             
         }
         else if (player == 10)
         {
-            [self dismissViewControllerAnimated:YES completion:nil];
             
+            [self performSegueWithIdentifier:@"toRes" sender:self];
             
-        } else if (player ==8)
+        } else if (player == 8)
         {
+            p1++;
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
             AudioServicesPlaySystemSound(1104);
             
-        } else if (player ==9)
+            
+        } else if (player == 9)
         {
+            p2++;
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
             AudioServicesPlaySystemSound(1104);
+            
         }
        
     }
     if ([packet.name isEqualToString:@"onHit" ]) {
-        int player = [packet.args[0] integerValue];
-        NSLog(@"ON HIT:%d",player);
-        if (player == myPlay)
+        playerz = [packet.args[0] integerValue];
+        NSLog(@"ON HIT:%d",playerz);
+        if (playerz == myPlay)
         {
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
         }
     }
     
 }
+int playerz = 0;
 int didHH = 0;
 int myPlay = -5;
 -(IBAction)buttonTest:(id)sender

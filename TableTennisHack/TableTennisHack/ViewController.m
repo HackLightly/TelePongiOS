@@ -18,6 +18,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"Numz: %d, %d, %d ", self.p1S, self.p2S, self.meS);
+        if (self.p1S > self.p2S)
+        {
+            if (self.meS == 1)
+            {
+               yRes.text = @"You Won!";
+            }else{
+                yRes.text = @"You Lost!";
+            }
+            score.text = [NSString stringWithFormat:@"Score: %d - %d", self.p1S, self.p2S];
+        }
+        else if (self.p1S < self.p2S)
+        {
+            if (self.meS == 2)
+            {
+                yRes.text = @"You Won!";
+            }
+            else{
+                yRes.text = @"You Lost!";
+            }
+            score.text = [NSString stringWithFormat:@"Score: %d - %d", self.p2S, self.p1S];
+        }
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

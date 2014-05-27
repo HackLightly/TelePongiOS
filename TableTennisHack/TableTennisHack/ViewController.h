@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    IBOutlet UILabel *yRes;
+    IBOutlet UILabel *score;
+}
+@property (nonatomic) int p1S;
+@property (nonatomic) int p2S;
+@property (nonatomic) int meS;
 @end
